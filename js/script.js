@@ -13,7 +13,7 @@ function show(projects) {
         const clone = template.cloneNode(true);
         clone.querySelector(".year").textContent = project.project_year;
         clone.querySelector(".title").textContent = project.project_name;
-        clone.querySelector("img").src = project._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+        clone.querySelector("img").src = project._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url;
         clone.querySelector(".technique").textContent = project.materialtechnique;
         parent.appendChild(clone);
     });
