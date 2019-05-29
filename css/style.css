@@ -1,0 +1,29 @@
+/*************** GENERAL ***************/
+
+
+
+/*************** COLORS ***************/
+
+:root {
+    --background-color: #191919;
+    --color-slightly-black: #383838;
+    --text-color: #ffffff;
+    --yellow-color: #E2B023;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+html,
+body {
+    background-color: var(--background-color);
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    color: #ffffff;
+}
