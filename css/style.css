@@ -35,13 +35,30 @@ body {
     border-left: 1px solid white;
     position: absolute;
     left: 50%;
-    height: 300%;
+    height: 400%;
     top: 0;
     bottom: 0;
     z-index: -2;
 }
 
 /*************** MAIN ***************/
+
+/*************** BIO BOX ***************/
+
+.bio-text{
+    padding: 13em 2em 5em;
+    background-color: var(--background-color);
+    text-align: center;
+    line-height: 4em;
+}
+
+
+.btn{
+    padding: 1em;
+    color: var(--text-color);
+    border: 1px solid white;
+    background-color: var(--background-color);
+}
 
 
 /*************** BACKGROUND IMAGE MOBILE ***************/
@@ -67,9 +84,9 @@ article {
 
 .project-box {
     background-color: var(--background-color);
-    position: relative;
+/*    position: relative;*/
     margin-top: 10em;
-    line-height: 2em;
+    line-height: 3em;
 }
 
 .project-box img {
@@ -227,3 +244,21 @@ label {
     width: 100%;
     padding: 3em;
 }
+
+/*--------------------------------------- FOOTER */
+
+.contact-footer{
+    line-height: 2em;
+    padding: 5em 1em 1em;
+
+
+}
+
+/*--------------------------------------- MEDIA QUERIES */
+
+@media only screen and (max-width: 700px) {
+
+    .techinque{
+        display: none;
+    }}
+
