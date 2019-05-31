@@ -52,7 +52,7 @@ nav a {
 
 /*************** GALLERY ***************/
 
-img {
+.project-image {
     padding-top: 4em;
     width: 80%;
     left: 0;

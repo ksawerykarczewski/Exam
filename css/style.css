@@ -27,6 +27,19 @@ body {
     max-width: 100%;
     margin: 0;
     color: #ffffff;
+    font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+.project-box h3 {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
 }
 
 /*************** VERTICAL-LINE ***************/
@@ -46,7 +59,7 @@ body {
 
 /*************** BIO BOX ***************/
 
-.bio-text{
+.bio-text {
     padding: 13em 2em 1em;
     background-color: var(--background-color);
     text-align: center;
@@ -54,7 +67,7 @@ body {
 }
 
 
-.btn{
+.btn {
     padding: 1em;
     color: var(--text-color);
     border: 1px solid white;
@@ -85,14 +98,15 @@ article {
 
 .project-box {
     background-color: var(--background-color);
-/*    position: relative;*/
+    /*    position: relative;*/
     margin-top: 1em;
     line-height: 3em;
     color: var(--text-color);
 
 }
 
-.project-box h2{
+
+a {
     text-decoration: none;
 }
 
@@ -238,11 +252,59 @@ label {
     padding: 3em;
 }
 
+/*--------------------------------------- FORM */
+
+form {
+    margin: 3em 0;
+    text-align: left;
+}
+
+.mailform {
+    display: inline-block;
+    margin-right: 3em;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    background-color: var(--background-color);
+    padding: 1em 0;
+    margin-bottom: 2em;
+}
+
+.send-btn {
+    color: white;
+    border: 1px solid white;
+    padding: 1em 2em;
+    background-color: var(--background-color);
+}
+
 /*--------------------------------------- FOOTER */
 
-.contact-footer{
+footer {
+    text-align: center;
+}
+
+.contact-footer {
     line-height: 2em;
-    padding: 5em 1em 1em;
+    padding: 5em 3em 1em;
+}
+
+footer h2 {
+    margin-bottom: .5em;
+}
+
+footer h4 {
+    font-weight: 300;
+}
+
+.grid-text {
+    grid-area: nr2;
+}
+
+.grid-form {
+    grid-area: nr1;
 }
 
 /*--------------------------------------- DETAILS PAGE */
@@ -254,9 +316,10 @@ label {
 
 @media only screen and (max-width: 700px) {
 
-    .technique{
+    .technique {
         display: none;
-    }}
+    }
+}
 
 
 @media screen and (max-height: 450px) {
@@ -273,3 +336,20 @@ label {
     }
 }
 
+@media only screen and (min-width: 700px) {
+    .footer-grid {
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "nr1 nr2"
+    }
+
+    .grid-text {
+        padding-top: 20%;
+    }
+
+    .contact-footer {
+        padding: 0 10%;
+    }
+}

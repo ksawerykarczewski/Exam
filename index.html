@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="kajetan's page">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,700&display=swap" rel="stylesheet">
     <title>EXAM</title>
 </head>
 
@@ -74,11 +75,13 @@
     <template>
         <article>
             <div class="vl"></div>
-           <a href=""><div class="project-box">
-                <h2 class="year"></h2>
-                <h2 class="title"></h2>
-                <img class="project-list-img">
-            </div></a>
+            <a href="">
+                <div class="project-box">
+                    <h3 class="year"></h3>
+                    <h2 class="title"></h2>
+                    <img class="project-list-img">
+                </div>
+            </a>
             <h2 class="technique"></h2>
 
 
@@ -93,8 +96,24 @@
     </template>
 
     <footer class="contact-footer">
-        <p>Get in touch</p>
-        <p>For enquires regarding my artwork, tattoos or if you just want to say hi.</p>
+        <h2>Get in touch</h2>
+        <div class="footer-grid">
+            <div class="grid-text">
+                <h4>For enquires regarding my artwork, tattoos or if you just want to say hi.</h4>
+            </div>
+            <div class="grid-form">
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                    <div class="mailform">
+                        <input placeholder="Your name" type="text" name="name"><br>
+                    </div>
+
+                        <input placeholder="Your email" type="text" name="mail" ><br>
+
+                    <input placeholder="Message" type="text" name="comment" size="50"><br>
+                    <input class="send-btn" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
         <p>kajetan.kar@gmail.com</p>
         <p>+ 48 668 864 568</p>
         <p>Kajetan Karczewski</p>
