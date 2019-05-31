@@ -88,6 +88,12 @@ article {
 /*    position: relative;*/
     margin-top: 1em;
     line-height: 3em;
+    color: var(--text-color);
+
+}
+
+.project-box h2{
+    text-decoration: none;
 }
 
 .project-box img {
@@ -143,8 +149,7 @@ li a {
 
 
 .site-title {
-    letter-spacing: 2px;
-    font-size: 28px;
+    letter-spacing: 3px;
     /*    display: inline-block;*/
 }
 
@@ -197,19 +202,6 @@ li a {
     font-size: 20px;
 }
 
-@media screen and (max-height: 450px) {
-
-    .overlay a {
-        font-size: 20px
-    }
-
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-
-    }
-}
 
 /*--------------------------------------- MENU MODAL END */
 
@@ -253,11 +245,31 @@ label {
     padding: 5em 1em 1em;
 }
 
+/*--------------------------------------- DETAILS PAGE */
+
+
+
+
 /*--------------------------------------- MEDIA QUERIES */
 
 @media only screen and (max-width: 700px) {
 
-    .techinque{
+    .technique{
         display: none;
     }}
+
+
+@media screen and (max-height: 450px) {
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+
+    }
+}
 

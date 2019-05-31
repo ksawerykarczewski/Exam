@@ -4,6 +4,12 @@ const template = document.querySelector("template").content;
 const parent = document.querySelector("main");
 const baseLink = "http://sansindesign.com/wp_kajetan/wp-json/wp/v2/"
 
+/* -------------------- details */
+
+
+//const urlParams = new URLSearchParams(window.location.search);
+//const proID = urlParams.get("id");
+
 
 /* -------------------- BIOS */
 
@@ -33,7 +39,14 @@ function show(projects) {
         clone.querySelector(".year").textContent = project.project_year;
         clone.querySelector(".title").textContent = project.project_name;
         clone.querySelector("img").src = project._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url;
-//        clone.querySelector(".technique").textContent = project.materialtechnique;
+        clone.querySelector(".technique").textContent = project.materialtechnique;
+
+        /* -------------------- details */
+
+        clone.querySelector("a").href = "details.html?id=" + project.id;
+
+        /* -------------------- details end */
+
         parent.appendChild(clone);
     });
 

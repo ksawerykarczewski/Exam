@@ -1,0 +1,89 @@
+/*************** GENERAL ***************/
+
+:root {
+    --background-color: #191919;
+    --color-slightly-black: #383838;
+    --text-color: #ffffff;
+    --yellow-color: #E2B023;
+    --modal-color: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+}
+
+html,
+body {
+    background-color: var(--background-color);
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    color: #ffffff;
+}
+
+/*************** VERTICAL-LINE ***************/
+
+/*************** NAV ***************/
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 2em;
+}
+
+/*************** MAIN ***************/
+
+/*************** BIO BOX ***************/
+
+.description-box {
+    text-align: justify;
+    padding: 2em 2em 0em;
+    line-height: 45px;
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+/*************** GALLERY ***************/
+
+img {
+    padding-top: 4em;
+    width: 80%;
+    left: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*************** GALLERY END ***************/
+
+/*************** MEDIA QUERIES ***************/
+
+@media only screen and (max-width: 700px) {
+
+    .technique {
+        display: none;
+    }
+}
+
+
+@media screen and (max-height: 450px) {
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+
+    }
+}
