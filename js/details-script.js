@@ -25,9 +25,13 @@ function showProject(data) {
     // populate it
 
     const year = clone.querySelector(".year");
+    const title = clone.querySelector(".title");
+    const description = clone.querySelector(".long-description");
 
 
     year.textContent = data.project_year;
+    title.textContent = data.project_name;
+    description.textContent = data.description;
 
     for (let i = 0; i < data.image.length; i++) {
         let image = document.createElement('img');
@@ -50,12 +54,12 @@ function showProject(data) {
 //        document.querySelector("img").src = data.image[i].guid;
 //    }
 
-    //    for (let i = 0; i < data.image.length; i++) {
-    //        let image = document.createElement('img');
-    //        image.classList.add('project-image');
-    //        image.src = data.image[i].guid;
-    //        document.appendChild(image);
-    //    }
+//    for (let i = 0; i < data.image.length; i++) {
+//        let image = document.createElement('img');
+//        image.classList.add('project-image');
+//        image.src = data.image[i].guid;
+//        document.appendChild(image);
+//    }
 
 
 /* -------------------- GALLERY */

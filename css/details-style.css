@@ -23,6 +23,7 @@ body {
     max-width: 100%;
     margin: 0;
     color: #ffffff;
+    font-family: "Cormorant Garamond", serif;
 }
 
 /*************** VERTICAL-LINE ***************/
@@ -63,6 +64,17 @@ nav a {
 }
 
 /*************** GALLERY END ***************/
+
+/*--------------------------------------- FOOTER */
+
+footer {
+    text-align: center;
+}
+
+.contact-footer {
+    line-height: 2em;
+    padding: 5em 3em 1em;
+}
 
 /*************** MEDIA QUERIES ***************/
 
