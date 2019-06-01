@@ -151,6 +151,8 @@ No usage of margin-right, or text-align! */
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 1em 1em 0em;
+    position: fixed;
 }
 
 ul {
@@ -159,6 +161,12 @@ ul {
     padding: 0.1em;
     display: inline-block;
 }
+
+ul a{
+    margin-right: 1em;
+}
+
+
 
 li {
     display: inline;
@@ -266,6 +274,10 @@ label {
     padding: 3em;
 }
 
+#myNav{
+    z-index: 6;
+}
+
 /*--------------------------------------- FORM */
 
 form {
@@ -360,6 +372,7 @@ footer h4 {
 }
 
 @media only screen and (min-width: 700px) {
+
     .footer-grid {
         display: grid;
         grid-gap: 2em;
@@ -375,4 +388,20 @@ footer h4 {
     .contact-footer {
         padding: 0 10%;
     }
+
+    .text {
+        display: inline-block;
+        position: static;
+    }
+
+    label{
+        display: none;
+    }
+
+    #navbar {
+/*    background-color: var(--background-color);*/
+}
+
+
+
 }

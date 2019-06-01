@@ -68,3 +68,21 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.display = "none";
 }
+
+
+// ------------------------------------------------ HIDE NAVBAR WHILE SCROLLING
+
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+        document.getElementById("navbar").classList.remove("opacity");
+
+    } else {
+        document.getElementById("navbar").style.top = "-100px";
+        document.getElementById("navbar").classList.add("opacity");
+    }
+    prevScrollpos = currentScrollPos;
+}
