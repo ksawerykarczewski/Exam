@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="vl"></div>
 
     <!--- MOBILE NAVIGATION TEST  --->
 
@@ -21,7 +22,10 @@
         <nav id="navbar">
 
             <ul>
-                <li class="site-title"><a href="index.html">Kajetan Karczewski</a></li>
+<!--                <li class="site-title"><a href="index.html">Kajetan Karczewski</a></li>-->
+                <li class="site-title"><a href="index.html"><img src="img/logo.png" height="60">
+                                        </a>
+                </li>
             </ul>
 
             <div class="site-segment">
@@ -46,6 +50,10 @@
                 </div>
             </div>
         </nav>
+        <div class="intro">
+            <h2>Kajetan Karczewski</h2>
+            <h3>Visual arts / tattoo</h3>
+        </div>
     </header>
 
     <!--- MOBILE NAVIGATION TEST END  --->
@@ -57,7 +65,7 @@
                 printmaking, painting, drawing and tattoos.</p>
             <button class="full-bio btn" href="bio-subpage.html">full bio</button>
         </section>
-        <div class="vl"></div>
+
 
     </main>
 
@@ -76,7 +84,7 @@
         <article>
             <div class="vl"></div>
             <a href="">
-                <div class="project-box">
+                <div class="project-box" id="project-section">
                     <h3 class="year"></h3>
                     <h2 class="title"></h2>
                     <img class="project-list-img">
@@ -109,18 +117,19 @@
 
                         <input placeholder="Your email" type="text" name="mail" ><br>
 
-                    <input placeholder="Message" type="text" name="comment" size="50"><br>
+                    <input placeholder="Message" type="text" name="comment" style="width:100%"><br>
                     <input class="send-btn" type="submit" value="Send">
                 </form>
             </div>
         </div>
-        <p>kajetan.kar@gmail.com</p>
-        <p>+ 48 668 864 568</p>
         <p>Kajetan Karczewski</p>
+        <div class="details-footer">
+            <p>kajetan.kar@gmail.com / + 48 668 864 568</p>
         <span>
             <p>instagram | facebook</p>
         </span>
-        <p>Created by Mockasins</p>
+            </div>
+        <p style="opacity: .2">Created by Mockasins</p>
     </footer>
 
     <script src="js/script.js">
