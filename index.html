@@ -9,7 +9,7 @@
     <meta name="description" content="kajetan's page">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,700&display=swap" rel="stylesheet">
-    <title>EXAM</title>
+    <title>EXAMM</title>
 </head>
 
 <body>
@@ -52,14 +52,19 @@
 
         </nav>
         <div class="intro">
-            <h2>Kajetan Karczewski</h2>
-            <h3>Visual arts / tattoo</h3>
+            <div class="intro-img">
+                <img class="profileimg" src="img/profile.png" alt="profile">
+            </div>
+            <div class="intro-text">
+                <h2>Kajetan Karczewski</h2>
+                <h3>Visual arts / tattoo</h3>
+            </div>
         </div>
     </header>
 
     <!--- MOBILE NAVIGATION TEST END  --->
 
-    <main>
+    <main id="chronology">
         <section class="bio-text">
             <p>Kajetan Karczewski is a visual artist based in
                 Poznan, Poland, working with
@@ -82,16 +87,19 @@
     <!--- BIOS - END !  --->
 
     <template>
-        <article>
-            <div class="vl"></div>
-            <a href="">
-                <div class="project-box" id="project-section">
-                    <h3 class="year"></h3>
-                    <h2 class="title"></h2>
-                    <img class="project-list-img">
-                </div>
-            </a>
-            <h2 class="technique"></h2>
+        <article class="timeline">
+                <div class="time-block">
+                    <div class="vl"></div>
+                    <a href="">
+                        <div class="project-box" id="project-section">
+                            <div class="project-name">
+                                <h3 class="year"></h3>
+                                <h2 class="title"></h2>
+                            </div>
+                            <img class="project-list-img">
+                        </div>
+                    </a>
+                    <h2 class="technique"></h2>
 
 
             <!--- button -
@@ -100,7 +108,7 @@
             </a>
             END !  --->
 
-
+            </div>
         </article>
     </template>
 

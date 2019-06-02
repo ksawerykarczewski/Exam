@@ -50,7 +50,7 @@ h3 {
 /*************** VERTICAL-LINE ***************/
 
 .vl {
-    width: .5px;
+    width: 1px;
     background-color: white;
     height: 100%;
     position: fixed;
@@ -65,27 +65,47 @@ h3 {
     margin-top: 50vh;
     text-align: right;
     right: 10%;
+}
+
+.intro-text{
     border-right: 1px solid white;
     padding-right: 1em;
 }
 
+.profileimg{
+    display: none;
+    width: 100%;
+}
+
 /*************** MAIN ***************/
+
+main {
+    margin-bottom: 10em;
+}
+
 
 /*************** BIO BOX ***************/
 
 .bio-text {
-    padding: 13em 2em 1em;
+    padding: 13em 15% 1em;
     background-color: var(--background-color);
     text-align: center;
     line-height: 4em;
+    margin-bottom: 15em;
 }
 
 
 .btn {
-    padding: 1em;
+    margin: 5em 0 2em;
+    padding: 1em 2em;
     color: var(--text-color);
     border: 1px solid white;
     background-color: var(--background-color);
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
 }
 
 
@@ -125,7 +145,7 @@ a {
 }
 
 .project-box img {
-    width: 80%;
+    width: 60%;
     left: 0;
     bottom: 0;
     margin-left: auto;
@@ -311,6 +331,7 @@ input[type=text] {
 footer {
     text-align: center;
     background-color: var(--background-color);
+    padding-top: 2em;
 }
 
 .details-footer {
@@ -319,7 +340,7 @@ footer {
 
 .contact-footer {
     line-height: 2em;
-    padding: 5em 3em 1em;
+    padding: 2em 10% 0;
 }
 
 footer h2 {
@@ -371,7 +392,7 @@ footer h4 {
     }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 768px) {
 
     .footer-grid {
         display: grid;
@@ -382,11 +403,11 @@ footer h4 {
     }
 
     .grid-text {
-        padding-top: 20%;
+        padding: 16% 10% 0;
     }
 
     .contact-footer {
-        padding: 0 10%;
+        padding: 2em 10% 0;
     }
 
     .text {
@@ -398,10 +419,115 @@ footer h4 {
         display: none;
     }
 
-    #navbar {
-/*    background-color: var(--background-color);*/
 }
 
 
 
+
+
+
+
+
+/* Main section */
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .bio-text {
+        margin-bottom: 4em;
+    }
+
+    .bio-text p {
+        font-size: 1.5em;
+    }
+
+    .project-box img {
+        width: 100%;
+    }
+
+    .profileimg{
+        display: inline;
+        position: relative;
+        width: 70%;
+    }
+
+    .intro {
+        right: 60%;
+        margin-top: 30vh;
+    }
+
+    .intro-text{
+        position: relative;
+        right: -200px;
+        top: -70px;
+    }
+
+    .timeline {
+        width: 1px;
+        margin: 0 auto 0 1rem;
+        padding-top: 3rem;
+        /* background: #ffffff; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .timeline:last-child {
+      padding-bottom: 3rem;
+    } */
+
+    #chronology ul li {
+        list-style: none;
+    }
+
+    /* .time-block is the div wrapping the li/article content */
+    .time-block {
+        width: 70vw;
+        padding: 1rem;
+        margin-left: 2.25rem;
+        border-radius: 5px;
+        /* transition: all 0.5s ease-in-out; */
+    }
+
+    .timeline {
+        margin: 0 auto;
+    }
+
+    .time-block {
+        width: 25vw;
+        margin-left: 2rem;
+    }
+
+    /* reorient odd timeline divs to the left */
+    #chronology .timeline:nth-child(odd) .time-block {
+        align-self: flex-end;
+        margin-right: 2rem;
+    }
+
+
+    #chronology .timeline:nth-child(odd) h3::before {
+        content: "";
+        padding: none;
+        border: none;
+        border-radius: none;
+        margin-right: 0;
+    }
+
+
 }
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+
+    .page-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .time-block {
+        width: 25vw;
+    }
+}
+
+/*///// CLASSES //////*/
