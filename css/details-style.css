@@ -55,6 +55,13 @@ nav a {
     float: right;
 }
 
+.underline {
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    line-height: 0.85;
+}
+
+
 
 
 /*************** MAIN ***************/

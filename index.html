@@ -19,21 +19,21 @@
 
     <header id="background-image">
 
-            <div id="myNav" class="overlay">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; close</a>
-                <div class="overlay-content">
-                    <a href="bio-subpage.html">bio</a>
-                    <a href="#project-section" onclick="closeNav()">projects</a>
-                    <a href="#contact-section" onclick="closeNav()">contact</a>
-                </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; close</a>
+            <div class="overlay-content">
+                <a href="bio-subpage.html">bio</a>
+                <a href="#project-section" onclick="closeNav()">projects</a>
+                <a href="#contact-section" onclick="closeNav()">contact</a>
             </div>
+        </div>
 
         <nav id="navbar">
 
             <ul>
-<!--                <li class="site-title"><a href="index.html">Kajetan Karczewski</a></li>-->
+                <!--                <li class="site-title"><a href="index.html">Kajetan Karczewski</a></li>-->
                 <li class="site-title"><a href="index.html"><img src="img/logo.png" height="60">
-                                        </a>
+                    </a>
                 </li>
             </ul>
 
@@ -45,7 +45,7 @@
                 </ul>
             </div>
 
-<!--            &#9776;-->
+            <!--            &#9776;-->
 
             <div class="menu">
                 <label for="menu" onclick="openNav()"><img class="burger" src="img/menu.png"></label>
@@ -62,8 +62,9 @@
                 <h3>Visual arts / tattoo</h3>
             </div>
         </div>
-        <div class="scroll-down"></div>
+        <img src="img/arrow.png" class="scroll-down">
     </header>
+
 
     <!--- MOBILE NAVIGATION TEST END  --->
 
@@ -74,9 +75,15 @@
                 printmaking, painting, drawing and tattoos.</p>
             <button class="full-bio btn" href="bio-subpage.html">full bio</button>
         </section>
+        <div class="projects_wrap"  id="project-section">
+    <h2 class="heading">Projects</h2>
+            <div class="vl-short"></div>
+            <p>scroll</p>
+            </div>
 
 
     </main>
+
 
     <!--- BIOS - TO DO !  --->
     <!--
@@ -91,21 +98,21 @@
 
     <template>
         <article class="timeline">
-                <div class="time-block">
-                    <div class="vl"></div>
-                    <a href="">
-                        <div class="project-box" id="project-section">
-                            <div class="project-name">
-                                <h3 class="year"></h3>
-                                <h2 class="title"></h2>
-                            </div>
-                            <img class="project-list-img">
+            <div class="time-block">
+                <div class="vl"></div>
+                <a href="">
+                    <div class="project-box">
+                        <div class="project-name">
+                            <h3 class="year"></h3>
+                            <h2 class="title"></h2>
                         </div>
-                    </a>
-                    <h2 class="technique"></h2>
+                        <img class="project-list-img">
+                    </div>
+                </a>
+                <h2 class="technique"></h2>
 
 
-            <!--- button -
+                <!--- button -
             <a href="">
                 <button class="details-btn">Details</button>
             </a>
@@ -127,7 +134,7 @@
                         <input placeholder="Your name" type="text" name="name"><br>
                     </div>
 
-                        <input placeholder="Your email" type="text" name="mail" ><br>
+                    <input placeholder="Your email" type="text" name="mail"><br>
 
                     <input placeholder="Message" type="text" name="comment" style="width:100%"><br>
                     <input class="send-btn" type="submit" value="Send">
@@ -137,10 +144,10 @@
         <p>Kajetan Karczewski</p>
         <div class="details-footer">
             <p>kajetankarczewski@gmail.com / + 48 668 864 568</p>
-        <span>
-            <p>instagram | facebook</p>
-        </span>
-            </div>
+            <span>
+                <p>instagram | facebook</p>
+            </span>
+        </div>
         <p style="opacity: .2">Created by Mockasins</p>
     </footer>
 
