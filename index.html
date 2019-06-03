@@ -18,14 +18,13 @@
     <!--- MOBILE NAVIGATION TEST  --->
 
     <header id="background-image">
-        <h2>HI HOW ARE U?</h2>
 
             <div id="myNav" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; close</a>
                 <div class="overlay-content">
                     <a href="bio-subpage.html">bio</a>
-                    <a href="#project-section" onclick="closeNav()"> projects</a>
-                    <a href="#">contact</a>
+                    <a href="#project-section" onclick="closeNav()">projects</a>
+                    <a href="#contact-section" onclick="closeNav()">contact</a>
                 </div>
             </div>
 
@@ -42,12 +41,14 @@
                 <ul>
                     <li class="text segment"><a href="bio-subpage.html">/ bio</a></li>
                     <li class="text segment"><a href="#project-section">/ projects</a></li>
-                    <li class="text segment"><a href="#">/ contact</a></li>
+                    <li class="text segment"><a href="#contact-section">/ contact</a></li>
                 </ul>
             </div>
 
+<!--            &#9776;-->
+
             <div class="menu">
-                <label for="menu" onclick="openNav()">&#9776;</label>
+                <label for="menu" onclick="openNav()"><img class="burger" src="img/menu.png"></label>
                 <input type="checkbox" id="menu">
             </div>
 
@@ -114,7 +115,7 @@
         </article>
     </template>
 
-    <footer class="contact-footer">
+    <footer class="contact-footer" id="contact-section">
         <h2>Get in touch</h2>
         <div class="footer-grid">
             <div class="grid-text">
