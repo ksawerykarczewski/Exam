@@ -14,15 +14,20 @@
 
 <body>
 
-    <nav><a href="index.html">Back</a></nav>
+
+    <nav id="navbar"><a  class="back-link" href="index.html">Back</a><a class="projects-link" href="index.html#project-section">/ Projects</a></nav>
+
 
 
     <main>
         <template>
             <article>
                 <div class="description-box">
-                    <h2 class="year heading"></h2>
-                    <h2 class="title heading"></h2>
+                    <div class="start-box">
+                        <div class="vl"></div>
+                        <h2 class="year heading"></h2>
+                        <h2 class="title heading"></h2>
+                    </div>
                     <p class="long-description"></p>
                 </div>
                 <h2 class="technique"></h2>
@@ -66,13 +71,15 @@
         </template>
     </main>
 
-    <footer class="contact-footer">
+    <footer class="contact-footer" id="contact-section">
         <p>Kajetan Karczewski</p>
-        <p>kajetan.kar@gmail.com</p>
-        <span>
-            <p>instagram | facebook</p>
-        </span>
-        <p>Created by Mockasins</p>
+        <div class="details-footer">
+            <p>kajetankarczewski@gmail.com / + 48 668 864 568</p>
+            <span>
+                <p>instagram | facebook</p>
+            </span>
+        </div>
+        <p style="opacity: .2">Created by Mockasins</p>
     </footer>
 
 
