@@ -28,7 +28,18 @@ body {
 
 /*************** VERTICAL-LINE ***************/
 
+.vl {
+    border-left: 1px solid white;
+    height: 200px;
+}
+
+
 /*************** NAV ***************/
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
 
 nav a {
     color: white;
@@ -36,13 +47,23 @@ nav a {
     padding: 2em;
 }
 
+.back-link {
+    float: left;
+}
+
+.projects-link {
+    float: right;
+}
+
+
+
 /*************** MAIN ***************/
 
 /*************** BIO BOX ***************/
 
 .description-box {
     text-align: justify;
-    padding: 2em 2em 0em;
+    padding: 2em 9% 0em;
     line-height: 45px;
 }
 
@@ -50,6 +71,7 @@ nav a {
     font-size: 40px;
     margin-bottom: 1em;
 }
+
 
 /*************** GALLERY ***************/
 
@@ -98,4 +120,26 @@ footer {
         right: 35px;
 
     }
+}
+
+@media (min-width: 768px) {
+
+    .project-image {
+        width: 60%;
+    }
+
+    .long-description {
+        width: 50%;
+        left: 0;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: 1em;
+        display: block;
+    }
+
+    .start-box {
+        margin-left: 2em;
+    }
+
+
 }
