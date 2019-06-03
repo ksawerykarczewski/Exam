@@ -249,7 +249,7 @@ No usage of margin-right, or text-align! */
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1em 1em 0em;
+    padding: 2em 1em 0em;
     position: fixed;
 }
 
@@ -291,6 +291,11 @@ li a {
     display: inline-block;
     float: right;
     margin-top: 12px;
+}
+
+ .menu img {
+    height: 20px;
+    width: auto;
 }
 
 /*--------------------------------------- MENU MODAL */
@@ -354,7 +359,6 @@ ul {
 label {
     display: inline-block;
     cursor: pointer;
-    padding: 1em;
 }
 
 #menu:checked ~ .text {
