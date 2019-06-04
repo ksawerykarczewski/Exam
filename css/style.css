@@ -216,7 +216,7 @@ article {
 .project-box {
     background-color: var(--background-color);
     /*    position: relative;*/
-    margin-top: 4em;
+    margin-top: 8em;
     line-height: 3em;
     color: var(--text-color);
 
