@@ -43,7 +43,7 @@ function show(projects) {
 
         /* -------------------- details */
 
-        clone.querySelector("a").href = "details.html?id=" + project.id;
+        clone.querySelector("a").href = "details_2.html?id=" + project.id;
 
         /* -------------------- details end */
 
