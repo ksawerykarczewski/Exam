@@ -37,7 +37,7 @@ h2 {
 
 h3 {
     font-weight: 300;
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .project-box h3 {
@@ -177,6 +177,12 @@ main {
 
 /*************** BIO BOX ***************/
 
+/*
+#bio-section{
+    height: 100vh;
+}
+*/
+
 .bio-text {
     padding: 13em 10% 2em;
     background-color: var(--background-color);
@@ -217,7 +223,6 @@ main {
 }
 
 #background-image-bio {
-
     max-width: 100%;
     height: 15vh;
     background-position: center;
@@ -241,7 +246,6 @@ article {
     margin-top: 8em;
     line-height: 3em;
     color: var(--text-color);
-
 }
 
 
@@ -256,6 +260,45 @@ a {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+
+.project-box img:hover {
+    filter:opacity(.5);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* -------------------- Technique text must be aligned with the img on top of it, use flex-box.
@@ -446,7 +489,7 @@ input[type=text] {
     background-color: var(--background-color);
     padding: 1em 0;
     margin-bottom: 2em;
-    float: right;
+/*    float: right;*/
 }
 
 .send-btn {
@@ -473,9 +516,14 @@ footer {
     margin: 1em 0;
 }
 
+.details-footer a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .contact-footer {
     line-height: 2em;
-    padding: 2em 10% 0;
+    padding: 2em 20% 0;
 }
 
 footer h2 {
@@ -540,6 +588,7 @@ footer h4 {
     ul img {
         display: none;
     }
+
 }
 
 
@@ -556,6 +605,10 @@ footer h4 {
 
     }
 }
+
+/* Main section */
+
+/* Media Queries */
 
 @media only screen and (min-width: 768px) {
 
@@ -583,7 +636,7 @@ footer h4 {
     }
 
     .contact-footer {
-        padding: 2em 10% 0;
+        padding: 6em 10% 0;
     }
 
     .text {
@@ -595,21 +648,7 @@ footer h4 {
         display: none;
     }
 
-}
-
-
-
-
-
-
-
-
-/* Main section */
-
-/* Media Queries */
-
-@media (min-width: 768px) {
-/*
+    /*
     .bio-text {
         margin-bottom: 4em;
     }
@@ -659,10 +698,11 @@ footer h4 {
 
     /* .time-block is the div wrapping the li/article content */
     .time-block {
-        width: 70vw;
         padding: 1rem;
-        margin-left: 2.25rem;
+        margin-left: 2rem;
         border-radius: 5px;
+        width: 25vw;
+        height: 30em;
         /* transition: all 0.5s ease-in-out; */
     }
 
@@ -670,10 +710,6 @@ footer h4 {
         margin: 0 auto;
     }
 
-    .time-block {
-        width: 25vw;
-        margin-left: 2rem;
-    }
 
     /* reorient odd timeline divs to the left */
     #chronology .timeline:nth-child(odd) .time-block {

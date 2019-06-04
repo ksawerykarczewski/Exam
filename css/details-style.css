@@ -39,6 +39,7 @@ body {
 nav {
     display: inline-block;
     width: 100%;
+    font-size: 18px;
 }
 
 nav a {
@@ -72,6 +73,10 @@ nav a {
     text-align: justify;
     padding: 2em 9% 0em;
     line-height: 45px;
+}
+
+.description-box p {
+    line-height: 33px;
 }
 
 .title {

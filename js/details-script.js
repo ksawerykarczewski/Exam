@@ -45,8 +45,6 @@ function showProject(data) {
     parent.appendChild(clone);
 }
 
-
-
 //    document.querySelector(".title").textContent = data.project_name;
 //    document.querySelector(".long-description").textContent = data.description;
 

@@ -39,7 +39,7 @@ function show(projects) {
         clone.querySelector(".year").textContent = project.project_year;
         clone.querySelector(".title").textContent = project.project_name;
         clone.querySelector("img").src = project._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url;
-        clone.querySelector(".technique").textContent = project.materialtechnique;
+        clone.querySelector(".technique").textContent = "/ " + project.materialtechnique;
 
         /* -------------------- details */
 
@@ -52,10 +52,6 @@ function show(projects) {
 
 }
 loadAll()
-
-
-
-
 
 
 // -------------------------------------------  GET MODAL
@@ -71,6 +67,8 @@ function closeNav() {
 
 
 // ------------------------------------------------ HIDE NAVBAR WHILE SCROLLING
+
+// Original code taken from W3SCHOOLS - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_navbar_hide_scroll
 
 let prevScrollpos = window.pageYOffset;
 
