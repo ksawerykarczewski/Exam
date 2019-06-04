@@ -22,9 +22,9 @@
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; close</a>
             <div class="overlay-content">
-                <a href="bio-subpage.html">bio</a>
-                <a href="#project-section" onclick="closeNav()">artworks</a>
-                <a href="#contact-section" onclick="closeNav()">contact</a>
+                <a href="#bio-section" onclick="closeNav()">Bio</a>
+                <a href="#project-section" onclick="closeNav()">Artworks</a>
+                <a href="#contact-section" onclick="closeNav()">Contact</a>
             </div>
         </div>
 
@@ -39,9 +39,9 @@
 
             <div class="site-segment">
                 <ul>
-                    <li class="text segment"><a href="bio-subpage.html">/ bio</a></li>
-                    <li class="text segment"><a href="#project-section">/ artworks</a></li>
-                    <li class="text segment"><a href="#contact-section">/ contact</a></li>
+                    <li class="text segment"><a href="#bio-section">/ Bio</a></li>
+                    <li class="text segment"><a href="#project-section">/ Artworks</a></li>
+                    <li class="text segment"><a href="#contact-section">/ Contact</a></li>
                 </ul>
             </div>
 
@@ -59,27 +59,31 @@
             </div>
             <div class="intro-text">
                 <h2>Kajetan Karczewski</h2>
-                <h3>Visual arts / tattoo</h3>
+                <h3>Visual &amp; tattoo artist</h3>
             </div>
         </div>
-        <img src="img/arrow.png" class="scroll-down">
+
+<!--        <div class="scroll-down">-->
+            <a class="scroll-down" href="#bio-section"></a>
+<!--        </div>-->
     </header>
 
 
     <!--- MOBILE NAVIGATION TEST END  --->
 
     <main id="chronology">
-        <section class="bio-text">
+        <section class="bio-text" id="bio-section">
             <p>Kajetan Karczewski is a visual artist based in
                 Poznan, Poland, working with
                 printmaking, painting, drawing and tattoos.</p>
-            <button class="full-bio btn" href="bio-subpage.html">full bio</button>
+            <!--            <button class="full-bio btn"><a href="bio-subpage.html">full bio</a></button>-->
+            <a class="full-bio btn" href="bio-subpage.html">full bio</a>
         </section>
-        <div class="projects_wrap"  id="project-section">
-    <h2 class="heading">Artworks</h2>
+        <div class="projects_wrap" id="project-section">
+            <h2 class="heading">Artworks</h2>
             <div class="vl-short"></div>
             <p>scroll</p>
-            </div>
+        </div>
 
 
     </main>

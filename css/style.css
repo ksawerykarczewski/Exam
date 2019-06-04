@@ -62,13 +62,15 @@ h3 {
     border-left: 1px solid white;
     height: 100px;
 }
-.projects_wrap{
+
+.projects_wrap {
     padding: 2em 9% 0em;
 }
 
-.heading{
+.heading {
     margin: 10px 0 10px 0;
 }
+
 /*************** Hero ***************/
 
 .intro {
@@ -78,12 +80,12 @@ h3 {
     right: 10%;
 }
 
-.intro-text{
+.intro-text {
     border-right: 1px solid white;
     padding-right: 1em;
 }
 
-.profileimg{
+.profileimg {
     display: none;
     width: 100%;
 }
@@ -97,14 +99,20 @@ A PEN BY Matthew Hirsch */
     left: 50%;
     bottom: 20px;
     display: block;
+    text-align: center;
+    font-size: 20px;
     z-index: 100;
     text-decoration: none;
     text-shadow: 0;
-    height: 33px;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
     z-index: 9;
-    -webkit-transform: translate(-50%, 0%) rotate(0deg);
-    -moz-transform: translate(-50%, 0%) rotate(0deg);
-    transform: translate(-50%, 0%) rotate(0deg);
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
     -webkit-animation: fade_move_down 4s ease-in-out infinite;
     -moz-animation: fade_move_down 4s ease-in-out infinite;
     animation: fade_move_down 4s ease-in-out infinite;
@@ -114,7 +122,7 @@ A PEN BY Matthew Hirsch */
 /*animated scroll arrow animation*/
 @-webkit-keyframes fade_move_down {
     0% {
-        -webkit-transform: translate(0, -10px) rotate(0deg);
+        -webkit-transform: translate(0, -10px) rotate(45deg);
         opacity: 0;
     }
 
@@ -123,14 +131,14 @@ A PEN BY Matthew Hirsch */
     }
 
     100% {
-        -webkit-transform: translate(0, 10px) rotate(0deg);
+        -webkit-transform: translate(0, 10px) rotate(45deg);
         opacity: 0;
     }
 }
 
 @-moz-keyframes fade_move_down {
     0% {
-        -moz-transform: translate(0, -10px) rotate(0deg);
+        -moz-transform: translate(0, -10px) rotate(45deg);
         opacity: 0;
     }
 
@@ -139,14 +147,14 @@ A PEN BY Matthew Hirsch */
     }
 
     100% {
-        -moz-transform: translate(0, 10px) rotate(0deg);
+        -moz-transform: translate(0, 10px) rotate(45deg);
         opacity: 0;
     }
 }
 
 @keyframes fade_move_down {
     0% {
-        transform: translate(0, -10px) rotate(0deg);
+        transform: translate(0, -10px) rotate(45deg);
         opacity: 0;
     }
 
@@ -155,7 +163,7 @@ A PEN BY Matthew Hirsch */
     }
 
     100% {
-        transform: translate(0, 10px) rotate(0deg);
+        transform: translate(0, 10px) rotate(45deg);
         opacity: 0;
     }
 }
@@ -170,17 +178,21 @@ main {
 /*************** BIO BOX ***************/
 
 .bio-text {
-    padding: 13em 15% 1em;
+    padding: 13em 10% 2em;
     background-color: var(--background-color);
     text-align: center;
     line-height: 4em;
     margin-bottom: 15em;
 }
 
+.bio-text p {
+    padding-bottom: 2em;
+}
+
 
 .btn {
     margin: 5em 0 2em;
-    padding: 1em 2em;
+    padding: 10px 20px;
     color: var(--text-color);
     border: 1px solid white;
     background-color: var(--background-color);
@@ -251,7 +263,7 @@ No usage of margin-right, or text-align! */
 
 .technique {
     text-align: left;
-    font-size: 13px;
+    font-size: 16px;
     margin-top: 10px;
 }
 
@@ -286,7 +298,7 @@ ul {
     display: inline-block;
 }
 
-ul a{
+ul a {
     margin-right: 1em;
 }
 
@@ -318,7 +330,7 @@ li a {
     float: right;
 }
 
- .menu img {
+.menu img {
     height: 20px;
     width: auto;
 }
@@ -346,7 +358,7 @@ li a {
 }
 
 .overlay a {
-    padding: 8px;
+    padding: 8px 0px 15px;
     text-decoration: none;
     color: black;
     display: block;
@@ -401,7 +413,7 @@ label {
     padding: 3em;
 }
 
-#myNav{
+#myNav {
     z-index: 6;
 }
 
@@ -423,8 +435,8 @@ input[type="text"],
 input[type="button"],
 input[type="submit"],
 .input-checkbox {
--webkit-appearance: none;
-border-radius: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 input[type=text] {
@@ -488,7 +500,7 @@ footer h4 {
     background-color: white;
 }
 
-#bio-body{
+#bio-body {
     background-color: white;
 }
 
@@ -548,15 +560,15 @@ footer h4 {
 @media only screen and (min-width: 768px) {
 
     #bio-main {
-    margin-top: 15vh;
-}
+        margin-top: 15vh;
+    }
 
     .biopage-grid {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: 1fr 2fr;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-columns: 1fr 2fr;
 
-}
+    }
 
     .footer-grid {
         display: grid;
@@ -579,7 +591,7 @@ footer h4 {
         position: static;
     }
 
-    label{
+    label {
         display: none;
     }
 
@@ -597,9 +609,11 @@ footer h4 {
 /* Media Queries */
 
 @media (min-width: 768px) {
+/*
     .bio-text {
         margin-bottom: 4em;
     }
+*/
 
     .bio-text p {
         font-size: 1.5em;
@@ -609,7 +623,7 @@ footer h4 {
         width: 100%;
     }
 
-    .profileimg{
+    .profileimg {
         display: inline;
         position: relative;
         width: 70%;
@@ -620,7 +634,7 @@ footer h4 {
         margin-top: 30vh;
     }
 
-    .intro-text{
+    .intro-text {
         position: relative;
         right: -200px;
         top: -70px;
