@@ -335,7 +335,7 @@ A PEN BY Matthew Hirsch */
 /*************** MAIN ***************/
 
 main {
-    margin-bottom: 10em;
+    margin-bottom: 3em;
 }
 
 
@@ -381,7 +381,7 @@ article {
     /*    position: relative;*/
     line-height: 3em;
     color: var(--text-color);
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 a {
@@ -473,6 +473,7 @@ footer {
 .contact-footer {
     line-height: 2em;
     padding: 2em 20% 0;
+    margin: 7em 0 0;
 }
 
 footer h2 {
@@ -615,6 +616,10 @@ footer h4 {
     object-fit: contain;
 }
 
+.gallery-container {
+    margin: 0 20%;
+}
+
 /* Expanding image text */
 #imgtext {
     position: absolute;
@@ -636,10 +641,10 @@ footer h4 {
 
 .image-list{
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 10px;
     margin: auto;
-    width: 450px;
+    padding: 0 10%;
 
 }
 
@@ -667,6 +672,15 @@ footer h4 {
 
 @media only screen and (max-width: 768px) {
 
+    #navbar-bio {
+    padding: 0 1em;
+}
+
+    .site-segment {
+    margin-top: 2em;
+}
+
+
     .technique {
         display: none;
     }
@@ -678,13 +692,21 @@ footer h4 {
     ul .sub-logo {
         display: block;
     }
+
+    .gallery-container {
+    padding: 0 10%;
+    }
 }
 
 
 @media only screen and (min-width: 768px) {
 
-    .project-image {
-        width: 40%;
+    .project-box {
+    margin-top: 0em;
+}
+
+    .image-list {
+        padding: 0 20%;
     }
 
     .long-description {
@@ -729,7 +751,7 @@ footer h4 {
 
     .contact-footer {
         padding: 2em 10% 0;
-        margin-top: 5em;
+        margin-top: 10em;
     }
 
     .text {
