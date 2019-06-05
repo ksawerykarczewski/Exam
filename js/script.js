@@ -1,31 +1,9 @@
-// -------------------------------------------  FEATURED IMAGE
+// -------------------------------------------  DETAILS*/
 
 const template = document.querySelector("template").content;
 const parent = document.querySelector("main");
 const baseLink = "http://sansindesign.com/wp_kajetan/wp-json/wp/v2/"
 
-/* -------------------- details */
-
-
-//const urlParams = new URLSearchParams(window.location.search);
-//const proID = urlParams.get("id");
-
-
-/* -------------------- BIOS */
-
-//function loadAll2() {
-//    fetch(baseLink + "bio").then(e => e.json()).then(show2);
-//}
-//
-//function show2(bios) {
-//    bios.forEach(bio => {
-//        const clone2 = document.getElementById("template_bios").cloneNode(true);
-//        clone2.querySelector(".short-bio").textContent = bio.short_bio;
-//        parent.appendChild(clone2);
-//    });
-//}
-//
-//loadAll2();
 
 /* -------------------- PROJECTS */
 
@@ -52,7 +30,6 @@ function show(projects) {
 
 }
 loadAll()
-
 
 // -------------------------------------------  GET MODAL
 
@@ -84,3 +61,7 @@ window.onscroll = function () {
     }
     prevScrollpos = currentScrollPos;
 }
+
+
+
+

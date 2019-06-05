@@ -6,9 +6,11 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const projectID = urlParams.get("id");
 
-const template = document.querySelector("template").content;
+const template = document.querySelector("#description-box").content;
 
 const parent = document.querySelector("main");
+
+const parent_gallery = document.querySelector(".image-list");
 
 //const parent = document.querySelector("main");
 
@@ -34,61 +36,33 @@ function showProject(data) {
     description.textContent = data.description;
 
     for (let i = 0; i < data.image.length; i++) {
-        let image = document.createElement('img');
-        image.classList.add('project-image');
-        image.src = data.image[i].guid;
-        clone.appendChild(image);
+        console.log(data.image[i])
+
+        parent_gallery.innerHTML += `<div class="column">
+                <img src="${data.image[i].guid}" alt="Nature" onclick="myFunction(this);">
+            </div>`;
+
+
+//        let image = document.createElement('img');
+//        image.classList.add('project-image');
+//        image.src = data.image[i].guid;
+//        clone.appendChild(image);
+
     }
 
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = data.image[0].guid
     // append to DOM
 
     parent.appendChild(clone);
 }
 
-//    document.querySelector(".title").textContent = data.project_name;
-//    document.querySelector(".long-description").textContent = data.description;
 
-//    for (let i = 0; i < data.image.length; i++) {
-//        document.querySelector("img").src = data.image[i].guid;
-//    }
+// ------------------------------------------------ GALLERY
 
-//    for (let i = 0; i < data.image.length; i++) {
-//        let image = document.createElement('img');
-//        image.classList.add('project-image');
-//        image.src = data.image[i].guid;
-//        document.appendChild(image);
-//    }
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = imgs.src;
+}
 
 
-/* -------------------- GALLERY */
-//
-//var slideIndex = 1;
-//showSlides(slideIndex);
-//
-//function plusSlides(n) {
-//    showSlides(slideIndex += n);
-//}
-//
-//function currentSlide(n) {
-//    showSlides(slideIndex = n);
-//}
-//
-//function showSlides(n) {
-//    var i;
-//    var slides = document.getElementsByClassName("mySlides");
-//    var dots = document.getElementsByClassName("dot");
-//    if (n > slides.length) {
-//        slideIndex = 1
-//    }
-//    if (n < 1) {
-//        slideIndex = slides.length
-//    }
-//    for (i = 0; i < slides.length; i++) {
-//        slides[i].style.display = "none";
-//    }
-//    for (i = 0; i < dots.length; i++) {
-//        dots[i].className = dots[i].className.replace(" active", "");
-//    }
-//    slides[slideIndex - 1].style.display = "block";
-//    dots[slideIndex - 1].className += " active";
-//}
