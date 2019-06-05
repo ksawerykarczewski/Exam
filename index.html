@@ -72,16 +72,18 @@
     <!--- MOBILE NAVIGATION TEST END  --->
 
     <main id="chronology">
-        <section class="bio-text" id="bio-section">
-            <p>Kajetan Karczewski is a visual artist based in
-                Poznan, Poland, working with
-                printmaking, painting, drawing and tattoos.</p>
-            <a class="full-bio btn" href="bio-subpage.html">full bio</a>
-        </section>
-        <div class="projects_wrap" id="project-section">
-            <h2 class="heading">Artworks</h2>
-            <div class="vl-short" style="opacity: .4"></div>
-            <p style="opacity: .4">scroll</p>
+        <div class="site-container">
+            <section class="bio-text" id="bio-section">
+                <p>Kajetan Karczewski is a visual artist based in
+                    Poznan, Poland, working with
+                    printmaking, painting, drawing and tattoos.</p>
+                <a class="full-bio btn" href="bio-subpage.html">full bio</a>
+            </section>
+            <div class="projects_wrap" id="project-section">
+                <h2 class="heading">Artworks</h2>
+                <div class="vl-short" style="opacity: .4"></div>
+                <p style="opacity: .4">scroll</p>
+            </div>
         </div>
     </main>
 
@@ -113,12 +115,14 @@
             </div>
             <div class="grid-form">
                 <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                    <div class="mailform">
-                        <input placeholder="Your name" type="text" name="name"><br>
+                    <div class="mailform-grid">
+                        <div class="mailform">
+                            <input placeholder="Your name" type="text" name="name">
+                        </div>
+                        <div class="mailform">
+                            <input placeholder="Your email" type="text" name="mail">
+                        </div>
                     </div>
-
-                    <input placeholder="Your email" type="text" name="mail"><br>
-
                     <input placeholder="Message" type="text" name="comment" style="width:100%"><br>
                     <input class="send-btn" type="submit" value="Send">
                 </form>

@@ -20,8 +20,6 @@ html,
 body {
     background-color: var(--background-color);
     height: 100%;
-    max-width: 100%;
-    margin: 0;
     color: #ffffff;
     font-family: "Cormorant Garamond", serif;
     scroll-behavior: smooth;
@@ -43,6 +41,12 @@ h3 {
     padding: 0;
     margin: 0;
 }
+
+.year h2 {
+    font-size: 1em;
+    margin: 0;
+    }
+
 
 /*************** NAVIGATION ***************/
 
@@ -115,6 +119,12 @@ li a {
 .menu img {
     height: 20px;
     width: auto;
+}
+
+.text a:hover {
+    color: lightgray;
+
+
 }
 
 /*--------------------------------------- MENU MODAL */
@@ -406,6 +416,11 @@ a {
     font-size: 16px;
     margin-top: 10px;
     padding: 0 5%;
+    opacity: .4;
+}
+
+#chronology {
+    margin-bottom: 10em;
 }
 
 
@@ -416,9 +431,14 @@ form {
     text-align: left;
 }
 
-.mailform {
-    display: inline-block;
-    margin-right: 3em;
+.mailform-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10%;
+}
+
+.mailform input {
+    width: 100%;
 }
 
 textarea,
@@ -448,6 +468,11 @@ input[type=text] {
     background-color: var(--background-color);
 }
 
+::placeholder {
+    font-size: 1.5em;
+    font-family: "Cormorant Garamond", serif;
+}
+
 /*--------------------------------------- FOOTER */
 
 footer {
@@ -473,7 +498,7 @@ footer {
 .contact-footer {
     line-height: 2em;
     padding: 2em 20% 0;
-    margin: 7em 0 0;
+    margin: 3em 0 0;
 }
 
 footer h2 {
@@ -512,13 +537,22 @@ footer h4 {
     margin: 0 auto;
 }
 
+.bio-pic {
+    background-image: url(.../img/profile.png);
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .biopage-text {
     text-align: left;
 }
 
 .profile-pic {
     position: relative;
-    width: 100%;
+    width: 170px;
 }
 
 .biopage-text p {
@@ -603,7 +637,7 @@ footer h4 {
 .container {
     position: relative;
     height: 400px;
-    padding-bottom: 3em;
+    padding-bottom: 1.5em;
     /*    display: none;*/
 }
 
@@ -641,7 +675,7 @@ footer h4 {
 
 .image-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 10px;
     margin: auto;
     padding: 0 10%;
@@ -674,18 +708,17 @@ footer h4 {
 
     #navbar-bio {
     padding: 0 1em;
-}
+    }
 
     .site-segment {
     margin-top: 2em;
-}
-
-
-    .technique {
-        display: none;
     }
 
     ul img {
+        display: none;
+    }
+
+    .technique {
         display: none;
     }
 
@@ -696,10 +729,23 @@ footer h4 {
     .gallery-container {
     padding: 0 10%;
     }
+
+    #navbar-details {
+    padding: 1em 1em 0em;
+    }
 }
 
 
 @media only screen and (min-width: 768px) {
+
+    #bio-main {
+    color: black;
+    padding: 0 10%;
+}
+
+    .bio-vh {
+    height: 100vh;
+}
 
     .project-box {
     margin-top: 0em;
@@ -732,15 +778,14 @@ footer h4 {
 
     .biopage-grid {
         display: grid;
-        grid-gap: 2em;
         grid-template-columns: 1fr 2fr;
-
     }
 
     .footer-grid {
+        margin-bottom: 1em;
         display: grid;
         grid-gap: 2em;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 3fr;
         grid-template-areas:
             "nr1 nr2"
     }
@@ -749,9 +794,9 @@ footer h4 {
         padding: 16% 10% 0;
     }
 
-    .contact-footer {
-        padding: 2em 10% 0;
-        margin-top: 10em;
+    .contact-footer-bio {
+        padding: 0 10%;
+        margin: 0;
     }
 
     .text {
@@ -774,11 +819,11 @@ footer h4 {
     .profileimg {
         display: inline;
         position: relative;
-        width: 70%;
+        width: 80%;
     }
 
     .intro {
-        right: 60%;
+        right: 40%;
         margin-top: 30vh;
     }
 
@@ -808,9 +853,9 @@ footer h4 {
     /* .time-block is the div wrapping the li/article content */
     .time-block {
         padding: 1rem;
-        margin-left: 4rem;
+        margin-left: 2rem;
         border-radius: 5px;
-        width: 25vw;
+        width: 40vw;
         height: 30em;
         /* transition: all 0.5s ease-in-out; */
     }
@@ -823,7 +868,7 @@ footer h4 {
     /* reorient odd timeline divs to the left */
     #chronology .timeline:nth-child(odd) .time-block {
         align-self: flex-end;
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
 
 
@@ -835,6 +880,39 @@ footer h4 {
         margin-right: 0;
     }
 
+
+}
+
+@media screen and (min-width:992px){
+
+    .intro {
+        right: 60%;
+        margin-top: 30vh;
+    }
+
+    .intro-text {
+        position: relative;
+        right: -200px;
+        top: -70px;
+    }
+
+    .time-block {
+        width: 30vw;
+        margin-left: 3rem;
+        /* transition: all 0.5s ease-in-out; */
+    }
+
+    #chronology .timeline:nth-child(odd) .time-block {
+        margin-right: 3rem;
+    }
+
+    .profile-pic {
+        width: 200px;
+    }
+
+    #chronology {
+    margin-bottom: 14em;
+}
 
 }
 
@@ -851,6 +929,26 @@ footer h4 {
     .time-block {
         width: 25vw;
     }
+
+        .image-list {
+        padding: 0 30%;
+    }
+
+    .container {
+        height: 600px;
+    }
+
+    .time-block {
+        width: 30vw;
+        height: 34em;
+        margin-left: 3rem;
+        /* transition: all 0.5s ease-in-out; */
+    }
+
+    #chronology .timeline:nth-child(odd) .time-block {
+        margin-right: 3rem;
+    }
+
 }
 
 /*///// CLASSES //////*/
