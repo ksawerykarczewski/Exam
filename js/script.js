@@ -2,7 +2,7 @@
 
 const template = document.querySelector("template").content;
 const parent = document.querySelector("main");
-const baseLink = "http://sansindesign.com/wp_kajetan/wp-json/wp/v2/"
+const baseLink = "https://sansindesign.com/wp_kajetan/wp-json/wp/v2/"
 
 
 /* -------------------- PROJECTS */
