@@ -8,137 +8,136 @@
     <meta name="description" content="kajetan's page">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,700&display=swap" rel="stylesheet">
-    <title>EXAMM</title>
+    <title>Kajetan Karczewski</title>
 </head>
 
 <body>
-    <div class="vl"></div>
+        <div class="vl"></div>
 
-    <!--- MOBILE NAVIGATION TEST  --->
+        <!--- MOBILE NAVIGATION TEST  --->
 
-    <header id="background-image">
+        <header id="background-image">
 
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; close</a>
-            <div class="overlay-content">
-                <a href="#bio-section" onclick="closeNav()">Bio</a>
-                <a href="#project-section" onclick="closeNav()">Artworks</a>
-                <a href="#contact-section" onclick="closeNav()">Contact</a>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; close</a>
+                <div class="overlay-content">
+                    <a href="#bio-section" onclick="closeNav()">Bio</a>
+                    <a href="#project-section" onclick="closeNav()">Artworks</a>
+                    <a href="#contact-section" onclick="closeNav()">Contact</a>
+                </div>
             </div>
-        </div>
 
-        <nav id="navbar">
+            <nav id="navbar">
 
-            <ul>
-                <!--                <li class="site-title"><a href="index.html">Kajetan Karczewski</a></li>-->
-                <li class="site-title"><a href="index.html"><img src="img/logo.png" height="60" alt="logo">
-                    </a>
-                </li>
-            </ul>
-
-            <div class="site-segment">
                 <ul>
-                    <li class="text segment"><a href="#bio-section">/ Bio</a></li>
-                    <li class="text segment"><a href="#project-section">/ Artworks</a></li>
-                    <li class="text segment"><a href="#contact-section">/ Contact</a></li>
+                    <!--                <li class="site-title"><a href="index.html">Kajetan Karczewski</a></li>-->
+                    <li class="site-title"><a href="index.html"><img src="img/logo.png" height="60" alt="logo">
+                        </a>
+                    </li>
                 </ul>
+
+                <div class="site-segment">
+                    <ul>
+                        <li class="text segment"><a href="#bio-section">/ Bio</a></li>
+                        <li class="text segment"><a href="#project-section">/ Artworks</a></li>
+                        <li class="text segment"><a href="#contact-section">/ Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="menu">
+                    <label for="menu" onclick="openNav()"><img class="burger" src="img/menu.png" alt="burgermenu"></label>
+                    <input type="checkbox" id="menu">
+                </div>
+
+            </nav>
+            <div class="intro">
+                <div class="intro-img">
+                    <img class="profileimg" src="img/profile.jpg" alt="profile">
+                </div>
+                <div class="intro-text">
+                    <h2>Kajetan Karczewski</h2>
+                    <h3>Visual &amp; tattoo artist</h3>
+                </div>
             </div>
 
-            <!--            &#9776;-->
+            <a class="scroll-down" href="#bio-section"></a>
+            <!--        </div>-->
+        </header>
 
-            <div class="menu">
-                <label for="menu" onclick="openNav()"><img class="burger" src="img/menu.png" alt="burgermenu"></label>
-                <input type="checkbox" id="menu">
+
+        <!--- MOBILE NAVIGATION TEST END  --->
+
+        <main id="chronology">
+            <div class="site-container">
+                <section class="bio-text" id="bio-section">
+                    <p>Kajetan Karczewski is a visual artist based in
+                        Poznan, Poland, working with
+                        printmaking, painting, drawing and tattoos.</p>
+                    <a class="full-bio btn" href="bio-subpage.html">full bio</a>
+                </section>
+                <div class="projects_wrap" id="project-section">
+                    <h2 class="heading">Artworks</h2>
+                    <div class="vl-short" style="opacity: .4"></div>
+                    <p style="opacity: .4">scroll</p>
+                </div>
             </div>
+        </main>
 
-        </nav>
-        <div class="intro">
-            <div class="intro-img">
-                <img class="profileimg" src="img/profile.jpg" alt="profile">
-            </div>
-            <div class="intro-text">
-                <h2>Kajetan Karczewski</h2>
-                <h3>Visual &amp; tattoo artist</h3>
-            </div>
-        </div>
+        <template>
+            <article class="timeline">
+                <div class="time-block">
+                    <div class="vl"></div>
+                    <a href="">
+                        <div class="project-box">
+                            <div class="project-name">
+                                <h3 class="year"></h3>
+                                <h2 class="title"></h2>
+                            </div>
+                            <div class="img-container">
+                                <img class="project-list-img">
+                            </div>
 
-        <!--        <div class="scroll-down">-->
-        <a class="scroll-down" href="#bio-section"></a>
-        <!--        </div>-->
-    </header>
-
-
-    <!--- MOBILE NAVIGATION TEST END  --->
-
-    <main id="chronology">
-        <div class="site-container">
-            <section class="bio-text" id="bio-section">
-                <p>Kajetan Karczewski is a visual artist based in
-                    Poznan, Poland, working with
-                    printmaking, painting, drawing and tattoos.</p>
-                <a class="full-bio btn" href="bio-subpage.html">full bio</a>
-            </section>
-            <div class="projects_wrap" id="project-section">
-                <h2 class="heading">Artworks</h2>
-                <div class="vl-short" style="opacity: .4"></div>
-                <p style="opacity: .4">scroll</p>
-            </div>
-        </div>
-    </main>
-
-    <template>
-        <article class="timeline">
-            <div class="time-block">
-                <div class="vl"></div>
-                <a href="">
-                    <div class="project-box">
-                        <div class="project-name">
-                            <h3 class="year"></h3>
-                            <h2 class="title"></h2>
                         </div>
+                    </a>
+                    <h2 class="technique"></h2>
+                </div>
+            </article>
+        </template>
 
-                        <img class="project-list-img">
-
-                    </div>
-                </a>
-                <h2 class="technique"></h2>
-            </div>
-        </article>
-    </template>
-
-    <footer class="contact-footer" id="contact-section">
-        <h2>Get in touch</h2>
-        <div class="footer-grid">
-            <div class="grid-text">
-                <h4>For enquires regarding my artwork, tattoos or if you just want to say hi.</h4>
-            </div>
-            <div class="grid-form">
-                <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                    <div class="mailform-grid">
-                        <div class="mailform">
-                            <input placeholder="Your name" type="text" name="name">
+        <footer class="contact-footer" id="contact-section">
+            <h2>Get in touch</h2>
+            <div class="footer-grid">
+                <div class="grid-text">
+                    <h4>For enquires regarding my artwork, tattoos or if you just want to say hi.</h4>
+                </div>
+                <div class="grid-form">
+                    <form action="mailto:kajetankarczewski@gmail.com" method="post" enctype="text/plain">
+                        <div class="mailform-grid">
+                            <div class="mailform">
+                                <input placeholder="Your name" type="text" name="name">
+                            </div>
+                            <div class="mailform">
+                                <input placeholder="Your email" type="text" name="mail">
+                            </div>
                         </div>
-                        <div class="mailform">
-                            <input placeholder="Your email" type="text" name="mail">
-                        </div>
-                    </div>
-                    <input placeholder="Message" type="text" name="comment" style="width:100%"><br>
-                    <input class="send-btn" type="submit" value="Send">
-                </form>
+                        <input placeholder="Message" type="text" name="comment" style="width:100%"><br>
+                        <input class="send-btn" type="submit" value="Send">
+                    </form>
+                </div>
             </div>
-        </div>
-        <p>Kajetan Karczewski</p>
-        <div class="details-footer">
-            <p>kajetankarczewski@gmail.com / + 48 668 864 568</p>
-            <span>
-                <a target="_blank" href="https://www.instagram.com/kajetankarczewski/">instagram</a><a target="_blank" href="https://www.facebook.com/kajetankarczewskiart/"> | facebook</a>
-            </span>
-        </div>
-        <p style="opacity: .2">Created by Mockasins</p>
-    </footer>
+            <p>Kajetan Karczewski</p>
+            <div class="details-footer">
+                <p>kajetankarczewski@gmail.com / + 48 668 864 568</p>
+                <span>
+                    <a target="_blank" href="https://www.instagram.com/kajetankarczewski/">instagram</a><a target="_blank" href="https://www.facebook.com/kajetankarczewskiart/"> | facebook</a>
+                </span>
+            </div>
+            <p style="opacity: .2">Created by Mockasins</p>
+        </footer>
 
-    <script src="js/script.js">
-    </script>
+        <script src="js/script.js">
+        </script>
 </body>
 
 </html>

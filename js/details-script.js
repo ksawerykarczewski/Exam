@@ -1,6 +1,6 @@
 // -------------------------------------------  DETAILS
 
-let baseLink = "http://sansindesign.com/wp_kajetan/wp-json/wp/v2/project/";
+let baseLink = "https://sansindesign.com/wp_kajetan/wp-json/wp/v2/project/";
 
 const urlParams = new URLSearchParams(window.location.search);
 

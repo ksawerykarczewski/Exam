@@ -50,7 +50,7 @@ function closeNav() {
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.pageYOffset + window.matchMedia("(min-width: 700px)");
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
         document.getElementById("navbar").classList.remove("opacity");
@@ -59,9 +59,6 @@ window.onscroll = function () {
         document.getElementById("navbar").style.top = "-110px";
         document.getElementById("navbar").classList.add("opacity");
     }
-    prevScrollpos = currentScrollPos;
+   prevScrollpos = currentScrollPos;
 }
-
-
-
 
