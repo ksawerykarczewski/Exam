@@ -507,6 +507,7 @@ footer {
     line-height: 2em;
     padding: 2em 20% 0;
     margin: 3em 0 0;
+    padding-bottom: 1em;
 }
 
 footer h2 {
@@ -796,7 +797,7 @@ footer h4 {
     }
 
     .contact-footer-bio {
-        padding: 0 10%;
+        padding: 0 10% 1em;
         margin: 0;
     }
 
